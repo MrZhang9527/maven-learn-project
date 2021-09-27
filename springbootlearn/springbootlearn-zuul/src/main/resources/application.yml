@@ -1,0 +1,12 @@
+server:
+  port: 4444
+
+spring:
+  application:
+    name: service-zuul
+
+zuul:
+  routes:
+    product:
+      path: /product/**
+      url: https://www.zhihu.com/
