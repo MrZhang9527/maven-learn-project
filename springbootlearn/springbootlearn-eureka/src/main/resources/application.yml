@@ -1,0 +1,13 @@
+server:
+  port: 8090
+eureka:
+  instance:
+    #eureka 服务端的实例名称
+    hostname: service-eureka
+  client:
+    #是否向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己就是服务端，职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8090/eureka/

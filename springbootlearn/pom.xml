@@ -17,10 +17,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>../springbootlearn-dao</module>
-        <module>../springbootlearn-pojo</module>
-        <module>../springbootlearn-service</module>
-        <module>../springbootlearn-controller</module>
+        <module>springbootlearn-dao</module>
+        <module>springbootlearn-pojo</module>
+        <module>springbootlearn-service</module>
+        <module>springbootlearn-controller</module>
+        <module>springbootlearn-zuul</module>
+        <module>springbootlearn-eureka</module>
     </modules>
 
     <properties>
@@ -44,6 +46,14 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.3</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
