@@ -11,3 +11,6 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://localhost:8090/eureka/
+  dashboard:
+    enabled: true
+    path: /home
