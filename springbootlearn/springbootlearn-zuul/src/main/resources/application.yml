@@ -7,6 +7,15 @@ spring:
 
 zuul:
   routes:
-    product:
-      path: /product/**
-      url: https://www.zhihu.com/
+    service-department:
+      path: /department/**
+      serviceId: service-department
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
+
+ribbon:
+  eureka:
+    enabled: true
