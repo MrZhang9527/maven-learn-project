@@ -15,3 +15,6 @@ eureka:
   dashboard:
     enabled: true
     path: /home
+  server:
+    #清除无效服务的定时任务，时间间隔。默认1分钟
+    delta-retention-timer-interval-in-ms: 60000

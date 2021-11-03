@@ -5,8 +5,15 @@ spring:
   application:
     name: service-zuul
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
+  instance:
+    appname: zuul
+
 zuul:
   routes:
     product:
       path: /product/**
-      url: https://www.zhihu.com/
+      url: http://localhost:5555/
