@@ -1,5 +1,11 @@
 server:
   port: 8000
+#  修改编码类型为utf-8
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
 
 spring:
   application:

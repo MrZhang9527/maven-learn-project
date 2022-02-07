@@ -16,22 +16,22 @@ import java.util.Map;
 @Repository
 public class DepartmentDao {
 
-    public static final Map<Integer, Department> departments;
+    private static final Map<Integer, Department> DEPARTMENTS;
 
     static {
-        departments = new HashMap<>();
-        departments.put(101,new Department(101,"文化部"));
-        departments.put(102,new Department(102,"宣传部"));
-        departments.put(103,new Department(103,"人力资源部"));
-        departments.put(104,new Department(104,"保卫科"));
-        departments.put(105,new Department(105,"信息安全部"));
+        DEPARTMENTS = new HashMap<>();
+        DEPARTMENTS.put(101,new Department(101,"文化部"));
+        DEPARTMENTS.put(102,new Department(102,"宣传部"));
+        DEPARTMENTS.put(103,new Department(103,"人力资源部"));
+        DEPARTMENTS.put(104,new Department(104,"保卫科"));
+        DEPARTMENTS.put(105,new Department(105,"信息安全部"));
     }
 
     public Collection<Department> getDepartments(){
-        return departments.values();
+        return DEPARTMENTS.values();
     }
 
     public Department getDepartmentById(int id){
-        return departments.get(id);
+        return DEPARTMENTS.get(id);
     }
 }

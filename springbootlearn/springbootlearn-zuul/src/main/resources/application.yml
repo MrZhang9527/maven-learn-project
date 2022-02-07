@@ -10,6 +10,7 @@ zuul:
     service-department:
       path: /department/**
       serviceId: service-department
+      url: http://127.0.0.1:8000
 
 eureka:
   client:
